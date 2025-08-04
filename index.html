@@ -1,172 +1,200 @@
+
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thư viện Toán THPT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tài liệu chia sẻ</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-    }
-
-    .header {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    .header p {
-      margin: 10px 0 0;
-      font-size: 18px;
+      padding: 20px;
     }
 
     .container {
-      background-color: #f1f1f1;
-      padding: 30px 10px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 1250px;
+      margin: auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    h1::before {
+      content: "📚 ";
+    }
+
+    .columns {
       display: flex;
+      justify-content: space-between;
+      gap: 30px;
       flex-wrap: wrap;
-      justify-content: center;
     }
 
     .column {
       flex: 1;
-      min-width: 250px;
-      max-width: 300px;
-      margin: 10px;
-      background-color: #f8f8f8;
+      min-width: 280px;
     }
 
-    .column h2 {
-      color: red;
+    .class-title {
       text-align: center;
-      margin-bottom: 20px;
+      color: red;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
 
-    .tool-button {
-      display: block;
-      background-color: #3498db;
-      color: white;
+    .section-title {
+      font-weight: bold;
+       font-size: 21px;
+      margin-top: 20px;
+    }
+
+    .doc-item {
+      color: red;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .download-link {
+      display: inline-block;
+      margin-left: 10px;
+      color: #3498db;
       text-decoration: none;
-      margin: 10px auto;
-      padding: 12px 16px;
-      width: 90%;
-      border-radius: 8px;
-      font-size: 16px;
-      text-align: left;
     }
 
-    .tool-button:hover {
-      background-color: #2980b9;
+    .download-link:hover {
+      text-decoration: underline;
     }
 
-    .avatar {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-    }
-
-    .avatar img {
-      width: 40px;
-      height: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
+    @media screen and (max-width: 768px) {
+      .columns {
         flex-direction: column;
-        align-items: center;
       }
     }
   </style>
 </head>
-  
 <body>
-
-  <!-- Phần đầu -->
-  <div class="header">
-    <div class="avatar">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Ảnh đại diện">
-    </div>
-    <h1><strong>Lê Văn Quý</strong></h1>
-    <p>Giáo viên Toán THPT Bình Sơn, Quảng Ngãi – Chia sẻ tool ứng dụng trong giảng dạy, tài liệu dạy hoc</p>
-  </div>
-  <!-- Phần nội dung -->
   <div class="container">
-    <!-- Cột 1 -->
-    <div class="column">
-      <h2>CÁC TOOL ỨNG DỤNG</h2>
-     <a href="https://www.geogebra.org/classic/yp8xtdrb"class="tool-button"> 1. 📘 Vẽ đồ thị hàm số</a>
-     <a href="https://www.desmos.com/3d/6d977245c9?lang=vi" class="tool-button"> 2.📘 Mô hình không gian</a>
-      <a href="https://www.geogebra.org/classic/whugkajj" class="tool-button"> 3. 📘 Thể tích khối tròn xoay 2D-3D</a>
-      <a href="https://www.geogebra.org/classic/q464uagt"class="tool-button"> 4. 📘 Mặt phẳng trong không gian</a>
-     <a href="https://www.math3d.org/Iia2YDusjY" class="tool-button"> 5.📘 Mô phỏng trái đất quay quanh MT</a>
-        <a href="https://www.geogebra.org/classic/gvkgt6yq" class="tool-button">6.📘 Mô hình cắt mặt nón</a>
-        <a href="https://www.geogebra.org/classic/wc4nnxmz" class="tool-button">7.📘 Mô phỏng diện tích hình phẳng</a>
-      <a href="https://www.geogebra.org/classic/stpvd4kk" class="tool-button">8.📘 Mẫu số liệu ghép nhóm</a>
-        <a href="https://www.geogebra.org/classic/kazcdm8q" class="tool-button">9.📘 Quan hệ giũa f(x) và f'(x)</a>
-        <a href="https://www.geogebra.org/classic/ezwkd2gh" class="tool-button">10.📘 Mô tả giá trị luongj giác của sin cos</a>
-      <a href="https://www.geogebra.org/classic/mdNyNEm" class="tool-button">11.📘 Mô hình đu quay</a> 
-   <a href="https://www.geogebra.org/classic/wtkvmfmx" class="tool-button">12.📘Mô hình bắn vệ tinh lên sao hỏa</a> 
-    <a href="https://www.geogebra.org/classic/amcdtvrs" class="tool-button">13.📘 Mô hình phép quay</a> 
-       <a href="https://www.geogebra.org/classic/zr6fx3hz" class="tool-button">14.📘 Mô hình phép vị tự</a> 
-       <a href="https://www.geogebra.org/classic/h5udsf8c" class="tool-button">15.📘 Mô hình phép tịnh tiến</a> 
-       <a href="https://www.geogebra.org/m/q5kbfu5t" class="tool-button">16.📘 Mô hình lắp ráp hình lập phương</a> 
-         <a href="https://www.geogebra.org/material/copy/id/vzju3ygf" class="tool-button">17.📘 Đồ thị hàm sin-cos</a> 
-    </div>
+    <h1>ĐỀ THI HSG CẤP TỈNH QUẢNG NGÃI</h1>
+    <div class="columns">
+      
+      <!-- HSG LỚP 11 -->
+      <div class="column">
+        <div class="class-title">HSG LỚP 11</div>
 
-    <!-- Cột 2 -->
-    <div class="column">
-      <h2>TUYỂN TẬP CÁC ĐỀ THI</h2>
-      <a href="https://drive.google.com/drive/u/2/my-drive" class="tool-button">1.📊 Đề thi TNTHPT Quốc gia</a>
-         <a href="https://script.google.com/macros/s/AKfycbxSYmWk3iSOXrNv4d6yeb15Qi2jLGL5SXP4rJ3ySaBWCwoZlrxGZ6UxqwTmkWjIxlhO/exec" class="tool-button">2.📊 Kho đề của Tỉnh Quảng Ngãi</a>
-         <a href="#" class="tool-button">3.📊 Đề thi HSG Tỉnh Quảng Ngãi</a>
-         <a href="#" class="tool-button">3.📊 Đề thi HSGMTCT Tỉnh Quảng Ngãi</a>   
-          <a href="#" class="tool-button">3.📊 Đề Giữa kỳ 1 lớp 10</a>
-         <a href="#" class="tool-button">4.📊 Đề cuối kỳ 1 lớp 10</a>
-          <a href="#" class="tool-button">5.📊 Đề Giữa kỳ 2 lớp 10</a>
-         <a href="#" class="tool-button">6.📊 Đề Giữa kỳ 2 lớp 10</a>
-         <a href="#" class="tool-button">7.📊 Đề Giữa kỳ 1 lớp 11</a>
-         <a href="#" class="tool-button">8.📊 Đề cuối kỳ 1 lớp 11</a>
-          <a href="#" class="tool-button">9.📊 Đề Giữa kỳ 2 lớp 11</a>
-         <a href="#" class="tool-button">10.📊 Đề Giữa kỳ 2 lớp 11</a>
-          <a href="#" class="tool-button">11.📊 Đề Giữa kỳ 1 lớp 12</a>
-         <a href="#" class="tool-button">12.📊 Đề cuối kỳ 1 lớp 12</a>
-          <a href="#" class="tool-button">13.📊 Đề Giữa kỳ 2 lớp 12</a>
-         <a href="#" class="tool-button">14.📊 Đề Giữa kỳ 2 lớp 12</a>
-            
-    </div>
+      
+<div class="section-title">1. Năm 2023-2024</div>
+        <div>
+          <span class="doc-item">Đề chính thức</span>
+          <a class="download-link" href="de112324.docx" download>⬇ Tải tài liệu</a>
+        </div>
+ <div>
+          <span class="doc-item">Đáp án</span>
+          <a class="download-link" href="da112324.docx" download>⬇ Tải tài liệu</a>
+        </div>
 
-    <!-- Cột 3 -->
-    <div class="column">
-      <h2>TÀI LIỆU</h2>
-  
-       <a href="https://drive.google.com/drive/u/1/my-drive" class="tool-button">1.🧭 Sách giáo khoa ct2018 </a>
-      <a href="https://drive.google.com/drive/folders/1-UsZojN63GyJcU4Y3_4hsuSuBQWBEkTA" class="tool-button">2.🧭 Tuyển tập các bài toán thực tế khối 10</a>
-      <a href="https://drive.google.com/drive/folders/1-UsZojN63GyJcU4Y3_4hsuSuBQWBEkTA" class="tool-button">3.🧭 Tuyển tập các bài toán thực tế khối 11</a>
-       <a href="https://drive.google.com/drive/folders/1-UsZojN63GyJcU4Y3_4hsuSuBQWBEkTA" class="tool-button">4. 💬🧭 Tuyển tập các bài toán thực tế khối 12</a>
-      <a href="#" class="tool-button">5.🧭 Sách tiếng anh</a>
-    
+ <div class="section-title">2. Năm 2024-2025</div>
+        <div>
+          <span class="doc-item">Đề chính thức</span>
+          <a class="download-link" href="de112425.docx" download>⬇ Tải tài liệu</a>
+        </div>
+ <div>
+          <span class="doc-item">Đáp án</span>
+          <a class="download-link" href="da112425.docx" download>⬇ Tải tài liệu</a>
+        </div>
+
+ 
+       <div class="section-title">3. Tải tài tham khảo</div>
+        <a class="download-link" href="baocao10.docx" download>⬇ Tải báo cáo Word</a>
+      </div>
+      
+      <!-- HSG LỚP 12 -->
+      <div class="column">
+        <div class="class-title">HSG LỚP 12</div>
+
+       <div class="section-title">1. Năm 2023-2024</div>
+        <div>
+          <span class="doc-item">Đề chính thức</span>
+          <a class="download-link" href="de122324.docx" download>⬇ Tải tài liệu</a>
+        </div>
+ <div>
+          <span class="doc-item">Đáp án</span>
+          <a class="download-link" href="da122324.docx" download>⬇ Tải tài liệu</a>
+        </div>
+
+ <div class="section-title">2. Năm 2024-2025</div>
+        <div>
+          <span class="doc-item">Đề chính thức</span>
+          <a class="download-link" href="de122425.docx" download>⬇ Tải tài liệu</a>
+        </div>
+ <div>
+          <span class="doc-item">Đáp án</span>
+          <a class="download-link" href="da122425.docx" download>⬇ Tải tài liệu</a>
+        </div>
+
+ 
+       <div class="section-title">3. Tải tài tham khảo</div>
+        <a class="download-link" href="baocao10.docx" download>⬇ Tải báo cáo Word</a>
+      </div>
+
+
+
+      <!-- HSG MTCT -->
+      <div class="column">
+        <div class="class-title">HSG MTCT</div>
+
+
+        <div class="section-title">1. Năm 2024-2025</div>
+        <div>
+          <span class="doc-item">Đề chính thức</span>
+          <a class="download-link" href="demtct2425.pdf" download>⬇ Tải tài liệu</a>
+        </div>
+ <div>
+          <span class="doc-item">Đáp án</span>
+          <a class="download-link" href="damtct2425.pdf" download>⬇ Tải tài liệu</a>
+        </div>
+
+ <div class="section-title">2. Năm 2025-2026</div>
+        <div>
+          <span class="doc-item">Đề chính thức chờ...</span>
+          <a class="download-link" href="demtct2526.doc" download>⬇ Tải tài liệu</a>
+        </div>
+ <div>
+          <span class="doc-item">Đáp án</span>
+          <a class="download-link" href="damtct2526.doc" download>⬇ Tải tài liệu</a>
+        </div>
+
+ 
+       <div class="section-title">3. Tải tài tham khảo</div>
+        <a class="download-link" href="baocao10.docx" download>⬇ Tải báo cáo Word</a>
+      </div>
+
+
+      </div>
     </div>
   </div>
 
-   
-   
-   
 
 
-  <footer class="footer"><center> 
+
+
+
+
+ <footer class="footer"><center> 
     © 2025 Lê Văn Quý. All rights reserved.
      </center>
   </footer>
 
 </body>
-
 </html>
-
