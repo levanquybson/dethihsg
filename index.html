@@ -1,237 +1,157 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tài liệu chia sẻ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đề Kiểm Tra Định Kì Khối 10</title>
   <style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 20px;
-  }
-
-  .container {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 40px;
-    max-width: 1250px;
-    margin: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 40px;
-    color: #1a237e;
-    margin-bottom: 40px;
-  }
-
-  h1::before {
-    content: "📚 ";
-  }
-
-  .columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-
-  .column {
-    flex: 1;
-    min-width: 280px;
-    background-color: #fefefe;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-  }
-
-  .column:hover {
-    transform: translateY(-4px);
-  }
-
-  .class-title {
-    text-align: center;
-    color: #e91e63;
-    font-weight: bold;
-    font-size: 26px;
-    margin-bottom: 10px;
-  }
-
-  .section-title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 20px;
-    color: #3f51b5;
-  }
-
-  .doc-item {
-    color: #ff5722;
-    font-weight: bold;
-    margin-left: 20px;
-  }
-
-  .download-link {
-    display: inline-block;
-    margin-left: 10px;
-    color: #009688;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .download-link:hover {
-    text-decoration: underline;
-    color: #004d40;
-  }
-
-  footer {
-    margin-top: 40px;
-    padding: 20px 0;
-    color: #555;
-    font-size: 14px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .columns {
-      flex-direction: column;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f9ff;
+      color: #2c3e50;
     }
-  }
-</style>
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      color: #2c3e90;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header blockquote {
+      font-style: italic;
+      color: #34495e;
+      font-size: 20px;
+    }
+
+    header blockquote span {
+      color: #2c3e90;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .column {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 22%;
+      min-width: 280px;
+      margin: 10px;
+      padding: 20px;
+      border-top: 8px solid #e91e63;
+    }
+
+    .column h2 {
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 20px;
+    }
+
+    .column h3 {
+      color: #2c3e90;
+      margin-bottom: 5px;
+    }
+
+    .item {
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .official { color: orange; font-weight: bold; }
+    .answer { color: orangered; font-weight: bold; }
+    .link { color: teal; text-decoration: none; }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>ĐỀ THI HSG CẤP TỈNH QUẢNG NGÃI</h1>
 
+<header>
+  <h1>📚 ĐỀ THI HSG TỈNH QUẢNG NGÃI CHƯƠNG TRÌNH 2018</h1>
+  <blockquote>
+    <span>"The natural world is written in the language of mathematics"
+</span><br>
+    – Galileo Galilei (1564–1642) –
+  </blockquote>
+</header>
 
-<div class="quote-box">
-  <div class="quote-text">
- <div class="section-title"> <center>  "The natural world is written in the language of mathematics"</center> 
-  </div> </div></div>
-  <div class="quote-author">
-   <center> – Galileo Galilei (1564–1642) –</center> 
-
-  </div>
-</div>   
-
- <div class="columns">
-      
-      <!-- HSG LỚP 11 -->
-      <div class="column">
-        <div class="class-title">HSG LỚP 11</div>
-
-      
-<div class="section-title">1. Năm 2023-2024</div>
-        <div>
-          <span class="doc-item">📄 Đề chính thức</span>
-          <a class="download-link" href="de112324.docx" download>⬇ Tải tài liệu</a>
-        </div>
- <div>
-          <span class="doc-item">📄 Đáp án</span>
-          <a class="download-link" href="da112324.docx" download>⬇ Tải tài liệu</a>
-        </div>
-
- <div class="section-title">2. Năm 2024-2025</div>
-        <div>
-          <span class="doc-item">📄 Đề chính thức</span>
-          <a class="download-link" href="de112425.docx" download>⬇ Tải tài liệu</a>
-        </div>
- <div>
-          <span class="doc-item">📄 Đáp án</span>
-          <a class="download-link" href="da112425.docx" download>⬇ Tải tài liệu</a>
-        </div>
-
- 
-       <div class="section-title">3. Tải tài tham khảo</div>
-        <a class="download-link" href="baocao10.docx" download>⬇ Tải báo cáo Word</a>
-      </div>
-      
-      <!-- HSG LỚP 12 -->
-      <div class="column">
-        <div class="class-title">HSG LỚP 12</div>
-
-       <div class="section-title">1. Năm 2023-2024</div>
-        <div>
-          <span class="doc-item">📄 Đề chính thức</span>
-          <a class="download-link" href="de122324.docx" download>⬇ Tải tài liệu</a>
-        </div>
- <div>
-          <span class="doc-item">📄 Đáp án</span>
-          <a class="download-link" href="da122324.docx" download>⬇ Tải tài liệu</a>
-        </div>
-
- <div class="section-title">2. Năm 2024-2025</div>
-        <div>
-          <span class="doc-item">📄 Đề chính thức</span>
-          <a class="download-link" href="de122425.docx" download>⬇ Tải tài liệu</a>
-        </div>
- <div>
-          <span class="doc-item">📄 Đáp án</span>
-          <a class="download-link" href="da122425.docx" download>⬇ Tải tài liệu</a>
-        </div>
-
- 
-       <div class="section-title">3. Tải tài tham khảo</div>
-        <a class="download-link" href="baocao10.docx" download>⬇ Tải báo cáo Word</a>
-      </div>
-
-
-
-      <!-- HSG MTCT -->
-      <div class="column">
-        <div class="class-title">HSG MTCT</div>
-
-
-        <div class="section-title">1. Năm 2024-2025</div>
-        <div>
-          <span class="doc-item">📄 Đề chính thức</span>
-          <a class="download-link" href="demtct2425.pdf" download>⬇ Tải tài liệu</a>
-        </div>
- <div>
-          <span class="doc-item">📄 Đáp án</span>
-          <a class="download-link" href="damtct2425.pdf" download>⬇ Tải tài liệu</a>
-        </div>
-
- <div class="section-title">2. Năm 2025-2026</div>
-        <div>
-          <span class="doc-item">📄 Đề chính thức chờ...</span>
-          <a class="download-link" href="demtct2526.doc" download>⬇ Tải tài liệu</a>
-        </div>
- <div>
-          <span class="doc-item">📄 Đáp án</span>
-          <a class="download-link" href="damtct2526.doc" download>⬇ Tải tài liệu</a>
-        </div>
-
- 
-       <div class="section-title">3. Tải tài tham khảo</div>
-        <a class="download-link" href="baocao10.docx" download>⬇ Tải báo cáo Word</a>
-      </div>
-
-
-      </div>
-    </div>
+<div class="container">
+  <!-- HSG LỚP 11 -->
+  <div class="column">
+    <h2>HSG LỚP 11</h2>
+    <h3>1. Năm 2023-2024</h3>
+    <div class="item">📄 <span class="official">Đề chính thức</span> ⬇ <a class="link" href="de112324.docx">Tải tài liệu</a></div>
+    <div class="item">📄 <span class="answer">Đáp án</span> ⬇ <a class="link" href="da112324.docx">Tải tài liệu</a></div>
+    <h3>2. Năm 2024-2025</h3>
+    <div class="item">📄 <span class="official">Đề chính thức</span> ⬇ <a class="link" href="de112425.docx">Tải tài liệu</a></div>
+    <div class="item">📄 <span class="answer">Đáp án</span> ⬇ <a class="link" href="da112425.docx">Tải tài liệu</a></div>
+    <h3>3. Tài liệu tham khảo</h3>
+    <div class="item">⬇ <a class="link" href="#">Tải báo cáo Word</a></div>
   </div>
 
+  <!-- HSG LỚP LỚP 12 -->
+  <div class="column">
+    <h2>HSG LỚP LỚP 12</h2>
+    <h3>1. Năm 2023-2024</h3>
+    <div class="item">📄 <span class="official">Đề chính thức</span> ⬇ <a class="link" href="de122324.docx">Tải tài liệu</a></div>
+    <div class="item">📄 <span class="answer">Đáp án</span> ⬇ <a class="link" href="da122324.docx">Tải tài liệu</a></div>
+    <h3>2. Năm 2024-2025</h3>
+    <div class="item">📄 <span class="official">Đề chính thức</span> ⬇ <a class="link" href="de122425.docx">Tải tài liệu</a></div>
+    <div class="item">📄 <span class="answer">Đáp án</span> ⬇ <a class="link" href="da122425.docx">Tải tài liệu</a></div>
+    <h3>3. Tài liệu tham khảo</h3>
+    <div class="item">⬇ <a class="link" href="#">Tải báo cáo Word</a></div>
+  </div>
 
+  <!-- HSG MTCT -->
+  <div class="column">
+    <h2>HSG MTCT</h2>
+    <h3>1. Năm 2024-2025</h3>
+    <div class="item">📄 <span class="official">Đề chính thức</span> ⬇ <a class="link" href="demtct2425.pdf">Tải tài liệu</a></div>
+    <div class="item">📄 <span class="answer">Đáp án</span> ⬇ <a class="link" href="damtct2425.pdf">Tải tài liệu</a></div>
+    <h3>2. Năm 2025-2026</h3>
+    <div class="item">📄 <span class="official">Đề chính thức</span> ⬇ <a class="link" href="#">Tải tài liệu</a></div>
+    <div class="item">📄 <span class="answer">Đáp án</span> ⬇ <a class="link" href="#">Tải tài liệu</a></div>
+    <h3>3. Tài liệu tham khảo</h3>
+    <div class="item">⬇ <a class="link" href="#">Tải báo cáo Word</a></div>
+  </div>
 
+ 
 
-
-
-
- <footer class="footer"><center> 
+</body>
+<footer class="footer"><center> 
     © 2025 Lê Văn Quý. All rights reserved.
      </center>
   </footer>
-
-</body>
 </html>
-
-
-
